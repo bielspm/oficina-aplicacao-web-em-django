@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Orçamento</title>
+</head>
+<body>
+<div class="col-md-4 mx-md-auto col-sm-12">
+    <h1>Orçamento</h1>
+    <table class="table table-striped table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Cliente</th>
+        <th>Data/Hora</th>
+        <th>Descrição</th>
+        <th>Vendedor</th>
+        <th>Valor</th>
+    </tr>
+    <tr>
+        <td><p>{{ orcamento.id }}</p></td>
+        <td><p>{{ orcamento.cliente }}</p></td>
+        <td><p>{{ orcamento.datahora }}</p></td>
+        <td><p>{{ orcamento.descricao }}</p></td>
+        <td><p>{{ orcamento.vendedor }}</p></td>
+        <td><p>R$: {{ orcamento.valor }}</p></td>
+    </tr>
+    </table>
+</div>
+</body>
+</html>
