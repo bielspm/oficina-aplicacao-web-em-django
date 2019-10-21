@@ -4,4 +4,4 @@ from django import forms
 class OrcamentoForm(forms.ModelForm):
     class Meta:
         model = Orcamento
-        fields = '__all__'
+        fields = ['cliente','datahora','descricao','valor','vendedor']

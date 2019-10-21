@@ -1,0 +1,23 @@
+{% extends 'oficina2/base.html' %}
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="col-sm-12 col-md-4 mx-md-auto bg-white">
+	<div class="p-2 my-2">
+		<h1 class="text-success">Editar orçamento</h1>
+	</div>
+	<form class="form-group mw-100" method="post" action="{% url 'edit_orcamento' orcamento.id %}">
+	{% csrf_token %}
+	{% bootstrap_form form %}
+		<div class="pb-3">
+			<input class="btn btn-info text-center" type="submit">
+		</div>
+	</form>
+	<div class="pb-3 text-right">
+		<form method="post" action="{% url 'excluir_orcamento' orcamento.id %}">
+		{% csrf_token %}
+			<input class="btn bg-danger text-white" value="Excluir" type='submit'>
+		</form>
+	</div>
+</div>
+{% endblock content %}

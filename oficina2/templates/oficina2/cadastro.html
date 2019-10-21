@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href='cadastro.css'>
-    <title>Cadastro</title>
-</head>
-<body>
-<div class="col-sm-12 col-md-4 mx-md-auto">
-<h1 class='text-center text-primary'>Oficina 2.0</h1>
-<h2 class='text-center text-info'>Cadastrar orçamento</h2>
+{% extends 'oficina2/base.html' %}
+
+{% block content %}
+<div class="col-sm-12 col-md-4 mx-md-auto bg-white">
+	<div class="bg-white p-2 my-2">
+		<h1 class='text-center text-info'>Cadastrar orçamento</h1>
+	</div>
 <form method='post' action="{% url 'cadastro' %}">
     {% csrf_token %}
     <div class="form-group">
@@ -34,11 +27,9 @@
         <label class="text-muted">Valor orçado:<span class='text-danger'>*</span></label>
         <input class="form-control" type="number" size='40' name='valor' required>   
     </div>
+	<div class="pb-3">
     <button class='d-block mx-auto bg-info text-white btn' style='border:none;' type='submit'>Cadastrar</button>
+	</div>
 </form>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>  
-</body>
-</html>
+{% endblock content %}
