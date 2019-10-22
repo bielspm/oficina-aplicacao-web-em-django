@@ -3,7 +3,7 @@ Sistema de cadastro de orçamennto para uma oficina.
 
 # Pagina principal
 
-<img src='main.png'>
+<img src='main-page.png'>
 
 # Tela de cadastro
 
