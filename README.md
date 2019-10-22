@@ -1,5 +1,5 @@
 # Oficina 2.0
-Sistema de cadastro de orçamennto para uma oficina.
+Sistema de cadastro de orçamento para uma oficina.
 
 # Pagina principal
 
