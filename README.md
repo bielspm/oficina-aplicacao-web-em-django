@@ -19,12 +19,12 @@ Sistema de cadastro de orçamento para uma oficina.
 
 # Como testar o sistema !
 
-É necessario que você tenha o Python instalando.
+É necessario que você tenha o Python instalado.
 Aqui foi usado a versão 3.7 . Você pode baixa-lo aqui https://www.python.org/ .
 
 Depois é necessario instalar o modulo do Django.
-Pra instala-lo abra o cmd do windows e digite: pip install django
-pip é o gerenciador de pacotes do python. caso o comando a cima falhar tente: py -m pip install django
+Pra instala-lo abra o cmd do windows e digite: pip install django <br>
+.Pip é o gerenciador de pacotes do python. caso o comando a cima falhar tente: py -m pip install django
 
 Agora nós vamos rodar o servidor.
 Pelo cmd do windows, Vá até a pagina raiz do projeto que é o onde está o arquivo 'manage.py' e
